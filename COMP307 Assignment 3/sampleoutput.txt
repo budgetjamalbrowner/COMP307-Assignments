@@ -1,0 +1,117 @@
+Part 2:
+ 
+Class Probabilities:
+ 
+			Class  Probability:
+0  no-recurrence-events       0.71161
+1     recurrence-events       0.29588
+
+Complete Probability table:
+     age  No-Recurrence:  Recurrence
+0  10-19        0.005263    0.012658
+1  20-29        0.010526    0.012658
+2  30-39        0.115789    0.202532
+3  40-49        0.326316    0.341772
+4  50-59        0.342105    0.278481
+5  60-69        0.200000    0.215190
+6  70-79        0.031579    0.012658
+7  80-89        0.005263    0.012658
+8  90-99        0.005263    0.012658
+  menopause  No-Recurrence:  Recurrence
+0      lt40        0.031579    0.012658
+1      ge40        0.463158    0.392405
+2   premeno        0.515789    0.620253
+   tumor-size  No-Recurrence:  Recurrence
+0         0-4        0.042105    0.025316
+1         5-9        0.026316    0.012658
+2       10-14        0.136842    0.025316
+3       15-19        0.121053    0.088608
+4       20-24        0.184211    0.177215
+5       25-29        0.168421    0.240506
+6       30-34        0.178947    0.291139
+7       35-39        0.063158    0.101266
+8       40-44        0.089474    0.088608
+9       45-49        0.015789    0.025316
+10      50-54        0.026316    0.050633
+11      55-59        0.005263    0.012658
+   inv-nodes  No-Recurrence:  Recurrence
+0        0-2        0.847368    0.544304
+1        3-5        0.089474    0.202532
+2        6-8        0.042105    0.139241
+3       9-11        0.015789    0.075949
+4      12-14        0.010526    0.037975
+5      15-17        0.021053    0.050633
+6      18-20        0.005263    0.012658
+7      21-23        0.005263    0.012658
+8      24-26        0.005263    0.025316
+9      27-29        0.005263    0.012658
+10     30-32        0.005263    0.012658
+11     33-35        0.005263    0.012658
+12     36-39        0.005263    0.012658
+  node-caps  No-Recurrence:  Recurrence
+0       yes        0.126316    0.405063
+1        no        0.878947    0.607595
+   deg-malig  No-Recurrence:  Recurrence
+0          1        0.294737    0.113924
+1          2        0.515789    0.367089
+2          3        0.200000    0.544304
+  breast  No-Recurrence:  Recurrence
+0   left        0.510526    0.556962
+1  right        0.494737    0.455696
+  breast-quad  No-Recurrence:  Recurrence
+0     left_up        0.352632    0.316456
+1    left_low        0.373684    0.405063
+2    right_up        0.110526    0.177215
+3   right_low        0.094737    0.088608
+4     central        0.089474    0.063291
+  irradiat  No-Recurrence:  Recurrence
+0      yes        0.157895    0.392405
+1       no        0.847368    0.620253
+
+
+Printing the calculate scores and predicted class for each input vector:
+ 
+Input Vector: ['50-59', 'premeno', '50-54', '0-2', 'yes', 2, 'right', 'left_up', 'yes']
+Y= no-recurrence-events score is:  5.0252361135206404e-06
+Y= recurrence-events score is:  1.185144746072391e-05
+Predicted Class of input vector:  recurrence-events
+Input Vector: ['50-59', 'ge40', '35-39', '0-2', 'no', 2, 'left', 'left_up', 'no']
+Y= no-recurrence-events score is:  0.00041732849746988816
+Y= recurrence-events score is:  4.345530735598768e-05
+Predicted Class of input vector:  no-recurrence-events
+Input Vector: ['50-59', 'premeno', '10-14', '3-5', 'no', 1, 'right', 'left_up', 'no']
+Y= no-recurrence-events score is:  5.8878218806890874e-05
+Y= recurrence-events score is:  1.622419224516929e-06
+Predicted Class of input vector:  no-recurrence-events
+Input Vector: ['40-49', 'premeno', '10-14', '0-2', 'no', 2, 'left', 'left_low', 'yes']
+Y= no-recurrence-events score is:  0.00018965784203051642
+Y= recurrence-events score is:  1.7066084343442433e-05
+Predicted Class of input vector:  no-recurrence-events
+Input Vector: ['50-59', 'ge40', '15-19', '0-2', 'yes', 2, 'left', 'central', 'yes']
+Y= no-recurrence-events score is:  5.434866736709343e-06
+Y= recurrence-events score is:  3.207415542941948e-06
+Predicted Class of input vector:  no-recurrence-events
+Input Vector: ['50-59', 'premeno', '25-29', '0-2', 'no', 1, 'left', 'left_low', 'no']
+Y= no-recurrence-events score is:  0.0007504740415831185
+Y= recurrence-events score is:  6.480302920326064e-05
+Predicted Class of input vector:  no-recurrence-events
+Input Vector: ['60-69', 'ge40', '25-29', '0-2', 'no', 3, 'right', 'left_low', 'no']
+Y= no-recurrence-events score is:  0.00025906825523534885
+Y= recurrence-events score is:  0.00012384056710871053
+Predicted Class of input vector:  no-recurrence-events
+Input Vector: ['60-69', 'ge40', '20-24', '0-2', 'no', 1, 'right', 'left_up', 'no']
+Y= no-recurrence-events score is:  0.00039405165026762883
+Y= recurrence-events score is:  1.4921120960543075e-05
+Predicted Class of input vector:  no-recurrence-events
+Input Vector: ['40-49', 'ge40', '30-34', '3-5', 'no', 3, 'left', 'left_low', 'no']
+Y= no-recurrence-events score is:  4.8934838332255675e-05
+Y= recurrence-events score is:  0.00010828136273080714
+Predicted Class of input vector:  recurrence-events
+Input Vector: ['50-59', 'ge40', '30-34', '3-5', 'no', 3, 'left', 'left_low', 'no']
+Y= no-recurrence-events score is:  5.130265309026804e-05
+Y= recurrence-events score is:  8.822925852139842e-05
+Predicted Class of input vector:  recurrence-events
+
+Test Accuracy:
+
+0.8
